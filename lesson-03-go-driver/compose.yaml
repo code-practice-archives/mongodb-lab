@@ -1,0 +1,11 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:8.0.29-ubi9-slim
+    container_name: mongodb-lesson-03
+    ports:
+      - "27019:27017"
+    volumes:
+      - mongodb_lesson_03_data:/data/db
+
+volumes:
+  mongodb_lesson_03_data:
